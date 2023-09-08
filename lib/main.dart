@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: FacebookApp(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -70,97 +71,97 @@ class FacebookApp extends StatelessWidget {
                     style: TextStyle(color: Colors.white, fontSize: 25),
                     textAlign: TextAlign.center,
                   )),
-              Wrap(
-                direction: Axis.horizontal,
-                alignment: WrapAlignment.start,
-                spacing: 10,
-                runSpacing: 20,
-                children: [
-                  ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        padding: MaterialStateProperty.all(
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 25)),
-                      ),
-                      child: Text(
-                        "1",
-                        style: TextStyle(fontSize: 22),
-                      )),
-                  ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        padding: MaterialStateProperty.all(
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 25)),
-                      ),
-                      child: Text(
-                        "2",
-                        style: TextStyle(fontSize: 22),
-                      )),
-                  ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        padding: MaterialStateProperty.all(
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 25)),
-                      ),
-                      child: Text(
-                        "3",
-                        style: TextStyle(fontSize: 22),
-                      )),
-                  ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        padding: MaterialStateProperty.all(
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 25)),
-                      ),
-                      child: Text(
-                        "4",
-                        style: TextStyle(fontSize: 22),
-                      )),
-                  ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        padding: MaterialStateProperty.all(
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 25)),
-                      ),
-                      child: Text(
-                        "5",
-                        style: TextStyle(fontSize: 22),
-                      )),
-                  ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        padding: MaterialStateProperty.all(
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 25)),
-                      ),
-                      child: Text(
-                        "6",
-                        style: TextStyle(fontSize: 22),
-                      )),
-                  ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        padding: MaterialStateProperty.all(
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 25)),
-                      ),
-                      child: Text(
-                        "7",
-                        style: TextStyle(fontSize: 22),
-                      )),
-                ],
+              Container(
+                width: 170,
+                height: 200,
+                alignment: Alignment.center,
+                color: Colors.blueGrey,
+                child: Wrap(
+                  direction: Axis.vertical,
+                  alignment: WrapAlignment.start,
+                  spacing: 10,
+                  runSpacing: 20,
+                  children: [
+                    ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.orange[500]),
+                          padding: MaterialStateProperty.all(
+                              EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 25)),
+                        ),
+                        child: Text(
+                          "1",
+                          style: TextStyle(fontSize: 22),
+                        )),
+                    ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.orange[500]),
+                          padding: MaterialStateProperty.all(
+                              EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 25)),
+                        ),
+                        child: Text(
+                          "2",
+                          style: TextStyle(fontSize: 22),
+                        )),
+                    ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.orange[500]),
+                          padding: MaterialStateProperty.all(
+                              EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 25)),
+                        ),
+                        child: Text(
+                          "3",
+                          style: TextStyle(fontSize: 22),
+                        )),
+                    ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.orange[500]),
+                          padding: MaterialStateProperty.all(
+                              EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 25)),
+                        ),
+                        child: Text(
+                          "4",
+                          style: TextStyle(fontSize: 22),
+                        )),
+                    ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.orange[500]),
+                          padding: MaterialStateProperty.all(
+                              EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 25)),
+                        ),
+                        child: Text(
+                          "5",
+                          style: TextStyle(fontSize: 22),
+                        )),
+                    ElevatedButton(
+                        onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.orange[500]),
+                          padding: MaterialStateProperty.all(
+                              EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 25)),
+                        ),
+                        child: Text(
+                          "6",
+                          style: TextStyle(fontSize: 22),
+                        )),
+                  ],
+                ),
               ),
               Container(
                   width: 400,
