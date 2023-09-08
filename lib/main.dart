@@ -23,112 +23,153 @@ class FacebookApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Facebook",
-            style: TextStyle(
+        appBar: AppBar(
+          title: Text("Facebook",
+              style: TextStyle(
+                  color: Colors.blueAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25)),
+          centerTitle: true,
+          leading: IconButton(
+              icon: Icon(
+                Icons.menu,
                 color: Colors.blueAccent,
-                fontWeight: FontWeight.bold,
-                fontSize: 25)),
-        centerTitle: true,
-        leading: IconButton(
-            icon: Icon(
-              Icons.menu,
-              color: Colors.blueAccent,
-            ),
-            onPressed: () {}),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.search, size: 30, color: Colors.blueAccent),
-          ),
-          IconButton(
+              ),
+              onPressed: () {}),
+          actions: [
+            IconButton(
               onPressed: () {},
-              icon: Icon(Icons.message, size: 30, color: Colors.blueAccent)),
-        ],
-        backgroundColor: Colors.white70,
-        elevation: 3,
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-            // mainAxisAlignment: MainAxisAlignment.spaceAround,
-            // crossAxisAlignment: CrossAxisAlignment.stretch,
+              icon: Icon(Icons.search, size: 30, color: Colors.blueAccent),
+            ),
+            IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.message, size: 30, color: Colors.blueAccent)),
+          ],
+          backgroundColor: Colors.white70,
+          elevation: 3,
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
+        ),
+        body: SingleChildScrollView(
+          child: Column(
             children: [
               Container(
-                  // color: Colors.amber,
-                  // margin: EdgeInsets.symmetric(vertical: 35, horizontal: 16),
-                  padding: EdgeInsets.all(20),
+                  width: double.infinity,
+                  height: 300,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      // border: Border.all(color: Colors.orange, width: 5),
-                      color: Colors.blueGrey,
-                      // borderRadius: BorderRadius.circular(10),
-                      shape: BoxShape.circle),
-                  width: 200,
-                  height: 200,
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.blue[700],
+                  ),
+                  // margin: EdgeInsets.only(bottom: 20),
+                  margin: EdgeInsets.symmetric(vertical: 15),
                   child: Text(
-                    "M'didech Abdelaziz",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w500,
-                    ),
-
-                    // maxLines: 2,
-                    overflow: TextOverflow.visible,
-                    textAlign: TextAlign.left,
-                    textDirection: TextDirection.rtl,
+                    "M'didech",
+                    style: TextStyle(color: Colors.white, fontSize: 25),
+                    textAlign: TextAlign.center,
                   )),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 120,
+                      height: 120,
+                      margin: EdgeInsets.only(right: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.blue[900],
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        "BOX1",
+                        style: TextStyle(color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Container(
+                      width: 120,
+                      height: 120,
+                      margin: EdgeInsets.only(right: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.blue[900],
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        "BOX2",
+                        style: TextStyle(color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Container(
+                      width: 120,
+                      height: 120,
+                      margin: EdgeInsets.only(right: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.blue[900],
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        "BOX3",
+                        style: TextStyle(color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Container(
+                      width: 120,
+                      height: 120,
+                      margin: EdgeInsets.only(right: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.blue[900],
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        "BOX4",
+                        style: TextStyle(color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Container(
+                      width: 120,
+                      height: 120,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.blue[900],
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        "BOX5",
+                        style: TextStyle(color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               Container(
-                  // color: Colors.amber,
-                  // margin: EdgeInsets.symmetric(vertical: 35, horizontal: 16),
-                  padding: EdgeInsets.all(20),
-                  margin: EdgeInsets.only(top: 400),
-                  alignment: Alignment.center,
+                  width: 400,
+                  height: 300,
                   decoration: BoxDecoration(
-                      // border: Border.all(color: Colors.orange, width: 5),
-                      color: Colors.blueGrey,
-                      // borderRadius: BorderRadius.circular(10),
-                      shape: BoxShape.circle),
-                  width: 200,
-                  height: 200,
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.blue[700],
+                  ),
+                  // margin: EdgeInsets.only(top: 20),
+                  margin: EdgeInsets.symmetric(vertical: 15),
+                  alignment: Alignment.center,
                   child: Text(
-                    "FrontEnd Developer",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w500,
-                    ),
-
-                    // maxLines: 2,
-                    overflow: TextOverflow.visible,
-                    textAlign: TextAlign.left,
-                    textDirection: TextDirection.rtl,
+                    "Abdelaziz",
+                    style: TextStyle(color: Colors.white, fontSize: 25),
+                    textAlign: TextAlign.center,
                   )),
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                "UX/UI Design",
-                style: TextStyle(backgroundColor: Colors.teal, fontSize: 33),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.favorite),
-                color: Colors.red,
-                iconSize: 50,
-                // alignment: Alignment.topLeft,
-              )
-            ]),
-      ),
-    );
+            ],
+          ),
+        ));
   }
 }
