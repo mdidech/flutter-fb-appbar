@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: FacebookApp(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -52,21 +55,63 @@ class FacebookApp extends StatelessWidget {
           backgroundColor: Colors.white70,
           elevation: 3,
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Icon(Icons.add),
-        ),
-        body: Column(
-          children: [
-            Text(
-              "M'didech",
-              style: TextStyle(
-                  fontSize: 44,
-                  fontFamily: 'Tangerine',
-                  fontWeight: FontWeight.bold),
-            ),
-            Image.asset("assets/img/Boy.jpg"),
-          ],
+        body: Container(
+          // color: Colors.amber,
+          margin: EdgeInsets.symmetric(vertical: 50),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "M'didech",
+                style: TextStyle(
+                    color: Colors.blueAccent,
+                    fontSize: 60,
+                    fontFamily: 'Tangerine',
+                    fontWeight: FontWeight.bold),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 40),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Container(
+                        padding: EdgeInsets.all(15),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border:
+                                Border.all(width: 1, color: Colors.blueAccent)),
+                        child: SvgPicture.asset(
+                          'assets/img/fb.svg',
+                          color: Colors.blueAccent,
+                          width: 40,
+                        )),
+                    Container(
+                        padding: EdgeInsets.all(15),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border:
+                                Border.all(width: 1, color: Colors.blueAccent)),
+                        child: SvgPicture.asset(
+                          'assets/img/insta.svg',
+                          color: Colors.blueAccent,
+                          width: 40,
+                        )),
+                    Container(
+                        padding: EdgeInsets.all(15),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border:
+                                Border.all(width: 1, color: Colors.blueAccent)),
+                        child: SvgPicture.asset(
+                          'assets/img/twitter.svg',
+                          color: Colors.blueAccent,
+                          width: 40,
+                        )),
+                  ],
+                ),
+              )
+            ],
+          ),
         ));
   }
 }
