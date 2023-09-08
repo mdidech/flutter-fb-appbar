@@ -13,8 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: FacebookApp(),
-    );
+        home: FacebookApp(), debugShowCheckedModeBanner: false);
   }
 }
 
@@ -24,82 +23,84 @@ class FacebookApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Facebook",
-            style: TextStyle(
+        appBar: AppBar(
+          title: Text("Facebook",
+              style: TextStyle(
+                  color: Colors.blueAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25)),
+          centerTitle: true,
+          leading: IconButton(
+              icon: Icon(
+                Icons.menu,
                 color: Colors.blueAccent,
-                fontWeight: FontWeight.bold,
-                fontSize: 25)),
-        centerTitle: true,
-        leading: IconButton(
-            icon: Icon(
-              Icons.menu,
-              color: Colors.blueAccent,
-            ),
-            onPressed: () {}),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.search, size: 30, color: Colors.blueAccent),
-          ),
-          IconButton(
+              ),
+              onPressed: () {}),
+          actions: [
+            IconButton(
               onPressed: () {},
-              icon: Icon(Icons.message, size: 30, color: Colors.blueAccent)),
-        ],
-        backgroundColor: Colors.white70,
-        elevation: 3,
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
-      ),
-      body: Container(
-        color: Colors.blueGrey,
-        height: 300,
-        child: Row(
-          children: [
-            Expanded(
-              flex: 1,
-              child: Container(
-                color: Colors.amber[200],
-                width: 100,
-                height: 100,
-                alignment: Alignment.center,
-                child: Text(
-                  "Box 1",
-                  style: TextStyle(fontSize: 25),
-                ),
-              ),
+              icon: Icon(Icons.search, size: 30, color: Colors.blueAccent),
             ),
-            Expanded(
-              flex: 2,
-              child: Container(
-                color: Colors.amber[500],
-                width: 100,
-                height: 100,
-                alignment: Alignment.center,
-                child: Text(
-                  "Box 2",
-                  style: TextStyle(fontSize: 25),
-                ),
-              ),
-            ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                color: Colors.amber[700],
-                width: 100,
-                height: 100,
-                alignment: Alignment.center,
-                child: Text(
-                  "Box 3",
-                  style: TextStyle(fontSize: 25),
-                ),
-              ),
-            ),
+            IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.message, size: 30, color: Colors.blueAccent)),
           ],
+          backgroundColor: Colors.white70,
+          elevation: 3,
         ),
-      ),
-    );
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
+        ),
+        body: Padding(
+          padding: EdgeInsets.only(top: 90),
+          child: Container(
+            color: Colors.blueGrey,
+            height: 300,
+            child: Row(
+              children: [
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    color: Colors.amber[200],
+                    width: 100,
+                    height: 100,
+                    alignment: Alignment.center,
+                    child: Text(
+                      "Box 1",
+                      style: TextStyle(fontSize: 25),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    color: Colors.amber[500],
+                    width: 100,
+                    height: 100,
+                    alignment: Alignment.center,
+                    child: Text(
+                      "Box 2",
+                      style: TextStyle(fontSize: 25),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    color: Colors.amber[700],
+                    width: 100,
+                    height: 100,
+                    alignment: Alignment.center,
+                    child: Text(
+                      "Box 3",
+                      style: TextStyle(fontSize: 25),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ));
   }
 }
