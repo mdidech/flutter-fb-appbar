@@ -52,6 +52,30 @@ class FacebookApp extends StatelessWidget {
         onPressed: () {},
         child: Icon(Icons.add),
       ),
+      body: Container(
+          // color: Colors.amber,
+          margin: EdgeInsets.symmetric(vertical: 35, horizontal: 16),
+          padding: EdgeInsets.all(20),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+              // border: Border.all(color: Colors.orange, width: 5),
+              color: Colors.blueGrey,
+              // borderRadius: BorderRadius.circular(10),
+              shape: BoxShape.circle),
+          child: Text(
+            "M'didech Abdelaziz",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 24,
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.w500,
+            ),
+
+            // maxLines: 2,
+            overflow: TextOverflow.visible,
+            textAlign: TextAlign.left,
+            textDirection: TextDirection.rtl,
+          )),
     );
   }
 }
