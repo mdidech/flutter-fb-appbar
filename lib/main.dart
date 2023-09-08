@@ -52,55 +52,84 @@ class FacebookApp extends StatelessWidget {
           onPressed: () {},
           child: Icon(Icons.add),
         ),
-        body: Padding(
-          padding: EdgeInsets.only(top: 90),
-          child: Container(
-            color: Colors.blueGrey,
-            height: 300,
-            child: Row(
-              children: [
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    color: Colors.amber[200],
-                    width: 100,
-                    height: 100,
-                    alignment: Alignment.center,
-                    child: Text(
-                      "Box 1",
-                      style: TextStyle(fontSize: 25),
-                    ),
+        body: Center(
+            child: Container(
+          width: 300,
+          height: 300,
+          padding: EdgeInsets.all(10),
+          color: Colors.blueGrey,
+          child: Stack(
+            children: [
+              Positioned(
+                top: 0,
+                left: 0,
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.green[200],
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Box 1",
+                    style: TextStyle(fontSize: 22),
                   ),
                 ),
-                Expanded(
-                  flex: 2,
-                  child: Container(
-                    color: Colors.amber[500],
-                    width: 100,
-                    height: 100,
-                    alignment: Alignment.center,
-                    child: Text(
-                      "Box 2",
-                      style: TextStyle(fontSize: 25),
-                    ),
+              ),
+              Positioned(
+                top: 0,
+                right: 0,
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 100,
+                  height: 100,
+                  color: Colors.amber[200],
+                  child: Text(
+                    "Box 2",
+                    style: TextStyle(fontSize: 22),
                   ),
                 ),
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    color: Colors.amber[700],
-                    width: 100,
-                    height: 100,
-                    alignment: Alignment.center,
-                    child: Text(
-                      "Box 3",
-                      style: TextStyle(fontSize: 25),
-                    ),
+              ),
+              Positioned(
+                bottom: 0,
+                left: 0,
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 100,
+                  height: 100,
+                  color: Colors.blueAccent,
+                  child: Text(
+                    "Box 3",
+                    style: TextStyle(fontSize: 22),
                   ),
                 ),
-              ],
-            ),
+              ),
+              Positioned(
+                bottom: 0,
+                right: 0,
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 100,
+                  height: 100,
+                  color: Colors.pink,
+                  child: Text(
+                    "Box 4",
+                    style: TextStyle(fontSize: 22),
+                  ),
+                ),
+              ),
+              Center(
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 120,
+                  height: 120,
+                  color: Colors.red[200],
+                  child: Text(
+                    "Box 5",
+                    style: TextStyle(fontSize: 22),
+                  ),
+                ),
+              ),
+            ],
           ),
-        ));
+        )));
   }
 }
