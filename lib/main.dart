@@ -26,7 +26,9 @@ class FacebookApp extends StatelessWidget {
       appBar: AppBar(
         title: Text("Facebook",
             style: TextStyle(
-                color: Colors.blueAccent, fontWeight: FontWeight.bold)),
+                color: Colors.blueAccent,
+                fontWeight: FontWeight.bold,
+                fontSize: 25)),
         centerTitle: true,
         leading: IconButton(
             icon: Icon(
@@ -43,7 +45,12 @@ class FacebookApp extends StatelessWidget {
               onPressed: () {},
               icon: Icon(Icons.message, size: 30, color: Colors.blueAccent)),
         ],
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white70,
+        elevation: 3,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
       ),
     );
   }
