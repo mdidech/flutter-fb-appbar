@@ -43,7 +43,11 @@ class FacebookApp extends StatelessWidget {
             ),
             IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.message, size: 30, color: Colors.blueAccent)),
+                icon: Icon(
+                  Icons.message,
+                  size: 30,
+                  color: Colors.blueAccent,
+                )),
           ],
           backgroundColor: Colors.white70,
           elevation: 3,
@@ -52,124 +56,17 @@ class FacebookApp extends StatelessWidget {
           onPressed: () {},
           child: Icon(Icons.add),
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                  width: double.infinity,
-                  height: 300,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: Colors.blue[700],
-                  ),
-                  // margin: EdgeInsets.only(bottom: 20),
-                  margin: EdgeInsets.symmetric(vertical: 15),
-                  child: Text(
-                    "M'didech",
-                    style: TextStyle(color: Colors.white, fontSize: 25),
-                    textAlign: TextAlign.center,
-                  )),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      width: 120,
-                      height: 120,
-                      margin: EdgeInsets.only(right: 10),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.blue[900],
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "BOX1",
-                        style: TextStyle(color: Colors.white),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      width: 120,
-                      height: 120,
-                      margin: EdgeInsets.only(right: 10),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.blue[900],
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "BOX2",
-                        style: TextStyle(color: Colors.white),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      width: 120,
-                      height: 120,
-                      margin: EdgeInsets.only(right: 10),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.blue[900],
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "BOX3",
-                        style: TextStyle(color: Colors.white),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      width: 120,
-                      height: 120,
-                      margin: EdgeInsets.only(right: 10),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.blue[900],
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "BOX4",
-                        style: TextStyle(color: Colors.white),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      width: 120,
-                      height: 120,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.blue[900],
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "BOX5",
-                        style: TextStyle(color: Colors.white),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                  width: 400,
-                  height: 300,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: Colors.blue[700],
-                  ),
-                  // margin: EdgeInsets.only(top: 20),
-                  margin: EdgeInsets.symmetric(vertical: 15),
-                  alignment: Alignment.center,
-                  child: Text(
-                    "Abdelaziz",
-                    style: TextStyle(color: Colors.white, fontSize: 25),
-                    textAlign: TextAlign.center,
-                  )),
-            ],
-          ),
+        body: Column(
+          children: [
+            Text(
+              "M'didech",
+              style: TextStyle(
+                  fontSize: 44,
+                  fontFamily: 'Tangerine',
+                  fontWeight: FontWeight.bold),
+            ),
+            Image.asset("assets/img/Boy.jpg"),
+          ],
         ));
   }
 }
